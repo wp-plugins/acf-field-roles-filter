@@ -1,0 +1,13 @@
+{
+  "name": "Emetrop/acf-field-roles-filter",
+  "type": "wordpress-plugin",
+  "require-dev": {
+    "squizlabs/php_codesniffer": "~2.3.3",
+    "wp-coding-standards/wpcs": "~0.6.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/"
+    ]
+  }
+}
